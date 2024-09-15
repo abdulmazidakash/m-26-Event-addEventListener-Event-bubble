@@ -7,9 +7,29 @@
 </head>
 <body>
 	<h1 onclick="console.log('I am clicked');">DOM er ajke special events</h1>
+
+	<!-- option -1: onclick attribute use -->
 	<button title="This is a tooltip" onclick="console.log(7);">Click Me</button>
 	<button onclick="console.log(65);">Another Button</button>
+	<br>
+
+	<!-- option -1: directly set on the html element -->
+	<button onclick="document.body.style.backgroundColor= 'yellow'">Make Yellow</button>
+
+	<!-- option - 2: function call  -->
+	<button onclick="makeRed()">Make red</button>
+
+	<!-- option - 3: id call  -->
+	<button id="make-blue">Make blue</button>
+	
+	<!-- option - 3: id call another -->
+	<button id="make-purple">Make purple</button>
+
+
 
 	<script src="js/event.js"></script>
+	<script>
+
+	</script>
 </body>
 </html>
